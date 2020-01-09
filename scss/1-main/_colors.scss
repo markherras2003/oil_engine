@@ -3,8 +3,11 @@ $colors: (
     Gold: #D8B849,
     lemon: #E7D77C,
     lemon-light: #F6F0D8,
+    sun:#C39900,
 
     white: #FFFFFF,
+    silver: #A9A9A9,
+    gray: #F8F8F8,
     dark: #353640
 );
 
@@ -24,4 +27,12 @@ $colors: (
 
 @function shade($color, $percentage) {
     @return mix(black, $color, $percentage);
+}
+
+.bg-white{
+    background-color: getColor(white);
+}
+
+.bg-gray{
+    background-color: getColor(gray);
 }

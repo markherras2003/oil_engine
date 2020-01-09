@@ -40,19 +40,23 @@
                 li {
                     list-style: none;
                     margin-right: 45px;
+                    // text-align: center;
 
                     a {
                         height: 22px;
                         color: #353640;
                         font-family: 'Karla', sans-serif;
                         font-size: 18px;
-                        font-weight: bold;
+                        font-weight: 700;
                         line-height: 22px;
                     }
 
                 }
             }
 
+            @include md{
+                display: none;
+            }
 
         }
 
@@ -78,5 +82,14 @@
 
 
     }
+
+    &.nav-sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+        
 
 }
