@@ -51,6 +51,10 @@
                         line-height: 22px;
                     }
 
+                    @include xl{
+                        margin-right: 24px;
+                    }
+
                 }
             }
 

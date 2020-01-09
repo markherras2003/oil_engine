@@ -6,12 +6,18 @@
 
 footer {
     position: relative;
+    width: 100%;
     height: 454px;
     background-color: getColor(dark);
+    padding: 0 20px;
     padding-top: 96px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 
     .footer-top {
         display: flex;
+        width: auto;
 
         .left-info {
             width: 50%;
@@ -33,6 +39,11 @@ footer {
                 }
             }
 
+            @include md{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
         }
 
         .footer-menu {
@@ -49,7 +60,6 @@ footer {
 
                     li {
                         list-style: none;
-                        height: 35px;
 
                         a {
                             font-family: 'Karla', sans-serif;
@@ -61,62 +71,76 @@ footer {
                                 color: getColor(white);
                             }
                         }
+
+                    }
+
+                    @include md{
+                        margin-left: 0;
                     }
                 }
             }
+
+            @include md{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+        @include md {
+            flex-direction: column;
+            margin: 0 40px;
         }
     }
 
     .footer-bottom {
-        max-width: 1288px;
         width: 100%;
         display: flex;
         height: 82px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        justify-content: space-between;
+        align-items: center;
         border-top: 1px solid #979797;
 
         p {
             color: getColor(silver);
-            width: 50%;
-            margin: auto;
         }
 
 
         .right {
             display: flex;
             align-items: center;
-            width: 50%;
-
-
-            p {
-                color: getColor(silver);
-                margin-left: 76px;
-                text-align: right;
-            }
+            justify-content: flex-end;
 
             ul {
                 display: flex;
-                margin-left: 94px;
 
                 li {
                     list-style: none;
-                    width: 137px;
-
-                    &:not(:last-child) {
-                        margin-right: 17px;
-                    }
+                    margin-right: 24px;
 
 
                     a {
                         color: getColor(silver);
                     }
+
+                    // @include md {
+                    //     width: max-content;
+                    //     margin-right: 16px;
+
+                    // }
                 }
+
+            }
+
+            .creator {
+                color: getColor(silver);
+                text-align: right;
             }
         }
 
     }
 
+
+    @include md{
+        height: auto;
+    }
 }
