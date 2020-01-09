@@ -15,7 +15,7 @@
             object-fit: cover;
         }
 
-        @include md{
+        @include md {
             margin-bottom: 40px;
         }
     }
@@ -26,17 +26,15 @@
         flex-direction: column;
         flex-wrap: wrap;
 
-        .overline-text {
-            display: block;
-            color: getColor(sun);
-            margin-bottom: 36px;
+        .section-heading {
+
+            h3 {
+                margin-bottom: 40px;
+                margin-top: 36px;
+            }
         }
 
-        h3 {
-            margin-bottom: 40px;
-        }
-
-        @include md{
+        @include md {
             margin-left: 0;
         }
     }
@@ -47,7 +45,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        .signature{
+        .signature {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -58,20 +56,20 @@
 
             }
 
-            img{
+            img {
                 height: 30px;
                 width: 153px;
             }
 
-            @include xs{
+            @include xs {
                 flex-direction: column;
             }
         }
 
-        
+
     }
 
-    @include md{
+    @include md {
         flex-direction: column;
     }
 }
