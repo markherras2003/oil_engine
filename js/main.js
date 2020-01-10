@@ -41,8 +41,8 @@ $(document).ready(function() {
   var swiper = new Swiper('.swiper-container', {
     
     autoplay: {
-      delay: 2500,
-      speed:800,
+      delay: 4000,
+      speed: 800,
       disableOnInteraction: false,
     },
     pagination: {

@@ -1,0 +1,33 @@
+.coming-soon{
+    display: flex;
+
+
+    .content{
+
+        .content-text{
+            .section-heading{
+                .author{
+                    display: block;
+                    font-size: 16px;
+                    line-height: 48px;
+                    color: getColor(silver);
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+       
+       p{
+        margin-bottom: 36px;
+        width: 442px;
+        font-size: 18px;
+       }
+
+       .image{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+    }
+}
